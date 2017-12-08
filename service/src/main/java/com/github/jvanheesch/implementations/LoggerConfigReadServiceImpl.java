@@ -6,8 +6,14 @@ import com.github.jvanheesch.interfaces.LoggerConfigReadService;
 import java.util.List;
 
 class LoggerConfigReadServiceImpl implements LoggerConfigReadService {
+    private final LoggerConfigDao loggerConfigDao;
+
+    LoggerConfigReadServiceImpl(LoggerConfigDao loggerConfigDao) {
+        this.loggerConfigDao = loggerConfigDao;
+    }
+
     @Override
     public List<ILoggerConfig> findAllFromDb() {
-        return LoggerConfigDao.findAll();
+        return this.loggerConfigDao.findAll();
     }
 }

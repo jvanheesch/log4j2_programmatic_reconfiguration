@@ -34,13 +34,18 @@ public class LoggerSpringConfig {
     }
 
     @Bean
-    public static LoggerConfigService loggerConfigService() {
-        return new LoggerConfigServiceImpl();
+    public static LoggerConfigDao loggerConfigDao() {
+        return new LoggerConfigDaoImpl();
     }
 
     @Bean
-    public static LoggerConfigReadService loggerConfigReadService() {
-        return new LoggerConfigReadServiceImpl();
+    public static LoggerConfigService loggerConfigService(LoggerConfigDao loggerConfigDao) {
+        return new LoggerConfigServiceImpl(loggerConfigDao);
+    }
+
+    @Bean
+    public static LoggerConfigReadService loggerConfigReadService(LoggerConfigDao loggerConfigDao) {
+        return new LoggerConfigReadServiceImpl(loggerConfigDao);
     }
 
     @Bean
