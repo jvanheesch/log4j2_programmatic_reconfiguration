@@ -55,8 +55,8 @@ public class LoggerSpringConfig {
 
     @Bean
     public Reconfigurable xmlBasedConfiguration(
-            @Value("com/github/jvanheesch/init_log4j2_part1.xml") String part1,
-            @Value("com/github/jvanheesch/init_log4j2_part2.xml") String part2
+            @Value("/com/github/jvanheesch/init_log4j2_part1.xml") String part1,
+            @Value("/com/github/jvanheesch/init_log4j2_part2.xml") String part2
     ) {
         Optional<URI> defaultXml = this.getResourceUri(part1);
         Optional<URI> specificXml = this.getResourceUri(part2);
@@ -94,7 +94,7 @@ public class LoggerSpringConfig {
     }
 
     private Optional<URI> getResourceUri(String resource) {
-        return Optional.ofNullable(this.getClass().getClassLoader().getResource(resource))
+        return Optional.ofNullable(this.getClass().getResource(resource))
                 .map(url -> {
                     URI uri;
                     try {
