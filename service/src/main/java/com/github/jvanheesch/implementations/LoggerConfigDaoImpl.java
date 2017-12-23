@@ -13,22 +13,26 @@ import java.util.stream.Collectors;
 class LoggerConfigDaoImpl implements LoggerConfigDao {
     private static final Map<String, ILoggerConfig> LOGGER_CONFIGS = new HashMap<>();
 
+    @Override
     public ILoggerConfig read(String loggerConfigName) {
         return SerializationUtils.clone(LOGGER_CONFIGS.get(loggerConfigName));
     }
 
+    @Override
     public List<ILoggerConfig> findAll() {
         return LOGGER_CONFIGS.values().stream()
                 .map(SerializationUtils::clone)
                 .collect(Collectors.toList());
     }
 
+    @Override
     public ILoggerConfig save(ILoggerConfig loggerConfig) {
         String name = loggerConfig.getName();
         LOGGER_CONFIGS.put(name, SerializationUtils.clone(loggerConfig));
         return LOGGER_CONFIGS.get(name);
     }
 
+    @Override
     public void delete(String loggerConfigName) {
         LOGGER_CONFIGS.remove(loggerConfigName);
     }
