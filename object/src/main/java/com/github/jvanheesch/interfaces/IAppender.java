@@ -1,7 +1,7 @@
 package com.github.jvanheesch.interfaces;
 
 import com.github.jvanheesch.implementations.AppenderImpl;
-import com.mycompany.builder.Builder;
+import com.github.jvanheesch.builder.Builder;
 import org.apache.logging.log4j.core.Appender;
 
 import java.io.Serializable;

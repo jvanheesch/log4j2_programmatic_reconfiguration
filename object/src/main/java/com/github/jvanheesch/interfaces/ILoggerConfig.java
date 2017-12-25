@@ -1,7 +1,7 @@
 package com.github.jvanheesch.interfaces;
 
 import com.github.jvanheesch.implementations.LoggerConfigImpl;
-import com.mycompany.builder.Builder;
+import com.github.jvanheesch.builder.Builder;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.config.LoggerConfig;

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>jvanheesch</groupId>
+    <groupId>com.github.jvanheesch</groupId>
     <artifactId>log4j2_programmatic_reconfiguration</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -75,23 +75,23 @@
             </dependency>
 
             <dependency>
-                <groupId>jvanheesch</groupId>
+                <groupId>com.github.jvanheesch</groupId>
                 <artifactId>webapp</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>jvanheesch</groupId>
+                <groupId>com.github.jvanheesch</groupId>
                 <artifactId>service</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>jvanheesch</groupId>
+                <groupId>com.github.jvanheesch</groupId>
                 <artifactId>object</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
             <dependency>
-                <groupId>jvanheesch</groupId>
+                <groupId>com.github.jvanheesch</groupId>
                 <artifactId>util</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
