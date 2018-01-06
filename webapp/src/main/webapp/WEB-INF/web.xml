@@ -6,4 +6,15 @@
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
     <display-name>log4j2_programmatic_reconfiguration</display-name>
 
+    <context-param>
+        <param-name>log4jConfiguration</param-name>
+        <!--Comma-separated list does not seem to work, see org.apache.logging.log4j.core.config.ConfigurationFactory.-->
+        <!--Also: init_log4j2_part1.xml cannot be used for initialization as is, since it uses sytem properties that are set by Spring,-->
+        <!--which happens after log4j2 initialization.-->
+        <!--Log4j2 manual:-->
+        <!--If no value is found for the key in the Lookup associated with the prefix then the value associated-->
+        <!--with the key in the properties declaration in the configuration file will be used. If no value is found the-->
+        <!--variable declaration will be returned as the value.-->
+        <param-value>classpath:com/github/jvanheesch/log4j2_init_config.xml</param-value>
+    </context-param>
 </web-app>

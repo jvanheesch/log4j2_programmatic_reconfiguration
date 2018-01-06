@@ -79,6 +79,9 @@ public class LoggerSpringConfig {
 
     /**
      * See {@link org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy}.
+     * <p>
+     * Log4j has the ability to automatically configure itself during initialization.
+     * We initialize log4j2 based on xml config only, and re-initialize it later when all necessary spring beans have been created.
      */
     @Bean
     public Reconfigurable reconfigurable(

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="console" level="error"/>
+        </Root>
+        <Logger name="com.github.jvanheesch.SpringWebApplicationInitializer" level="info" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+    </Loggers>
+</Configuration>
