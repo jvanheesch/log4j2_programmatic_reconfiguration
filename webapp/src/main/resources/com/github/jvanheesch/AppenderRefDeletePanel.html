@@ -4,12 +4,23 @@
 <wicket:panel>
     <div class="form-group">
         <form wicket:id="form">
-            <span>Loggerconfig name</span>
-            <input wicket:id="loggerConfigName" class="form-control"/>
-            <br>
-            <span>Appender name</span>
-            <input wicket:id="appenderName" class="form-control"/>
-            <button wicket:id="submitLink" class="form-control">delete</button>
+            <dl class="dl-horizontal">
+                <dt>
+                    <span>Loggerconfig name</span>
+                </dt>
+                <dd>
+                    <input wicket:id="loggerConfigName" class="form-control"/>
+                </dd>
+                <dt>
+                    <span>Appender name</span>
+                </dt>
+                <dd>
+                    <input wicket:id="appenderName" class="form-control"/>
+                </dd>
+                <dd>
+                    <button wicket:id="submitLink" class="form-control">delete</button>
+                </dd>
+            </dl>
         </form>
     </div>
 </wicket:panel>

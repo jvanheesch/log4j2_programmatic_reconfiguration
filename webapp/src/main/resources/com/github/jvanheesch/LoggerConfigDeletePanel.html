@@ -4,9 +4,17 @@
 <wicket:panel>
     <div class="form-group">
         <form wicket:id="form">
-            <span>Name</span>
-            <input wicket:id="name" class="form-control"/>
-            <button wicket:id="submitLink" class="form-control">delete</button>
+            <dl class="dl-horizontal">
+                <dt>
+                    <span>Name</span>
+                </dt>
+                <dd>
+                    <input wicket:id="name" class="form-control"/>
+                </dd>
+                <dd>
+                    <button wicket:id="submitLink" class="form-control">delete</button>
+                </dd>
+            </dl>
         </form>
     </div>
 </wicket:panel>

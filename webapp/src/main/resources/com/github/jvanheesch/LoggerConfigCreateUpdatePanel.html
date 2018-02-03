@@ -4,16 +4,29 @@
 <wicket:panel>
     <div class="form-group">
         <form wicket:id="form">
-            <span>Name</span>
-            <input wicket:id="name" class="form-control"/>
-            <br>
-            <span>Level</span>
-            <select wicket:id="level" class="form-control"></select>
-            <br>
-            <span>Additive</span>
-            <select wicket:id="additive" class="form-control"></select>
-            <br>
-            <button wicket:id="submitLink" class="form-control">submit</button>
+            <dl class="dl-horizontal">
+                <dt>
+                    <span>Name</span>
+                </dt>
+                <dd>
+                    <input wicket:id="name" class="form-control"/>
+                </dd>
+                <dt>
+                    <span>Level</span>
+                </dt>
+                <dd>
+                    <select wicket:id="level" class="form-control"></select>
+                </dd>
+                <dt>
+                    <span>Additive</span>
+                </dt>
+                <dd>
+                    <select wicket:id="additive" class="form-control"></select>
+                </dd>
+                <dd>
+                    <button wicket:id="submitLink" class="form-control">submit</button>
+                </dd>
+            </dl>
         </form>
     </div>
 </wicket:panel>
