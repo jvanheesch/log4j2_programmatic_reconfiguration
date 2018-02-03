@@ -2,18 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:panel>
-    <form wicket:id="form">
-        <span>Name</span>
-        <input wicket:id="name"/>
-        <br>
-        <span>Level</span>
-        <select wicket:id="level"></select>
-        <br>
-        <span>Additive</span>
-        <select wicket:id="additive"></select>
-        <br>
-        <button wicket:id="submitLink">submit</button>
-    </form>
+    <div class="form-group">
+        <form wicket:id="form">
+            <span>Name</span>
+            <input wicket:id="name" class="form-control"/>
+            <br>
+            <span>Level</span>
+            <select wicket:id="level" class="form-control"></select>
+            <br>
+            <span>Additive</span>
+            <select wicket:id="additive" class="form-control"></select>
+            <br>
+            <button wicket:id="submitLink">submit</button>
+        </form>
+    </div>
 </wicket:panel>
 </body>
 </html>

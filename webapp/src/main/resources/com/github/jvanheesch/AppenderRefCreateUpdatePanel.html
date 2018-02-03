@@ -2,18 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:panel>
-    <form wicket:id="form">
-        <span>Loggerconfig name</span>
-        <input wicket:id="loggerConfigName"/>
-        <br>
-        <span>Appender name</span>
-        <select wicket:id="appenderName"></select>
-        <br>
-        <span>Level</span>
-        <select wicket:id="level"></select>
-        <br>
-        <button wicket:id="submitLink">submit</button>
-    </form>
+    <div class="form-group">
+        <form wicket:id="form">
+            <span>Loggerconfig name</span>
+            <input wicket:id="loggerConfigName" class="form-control"/>
+            <br>
+            <span>Appender name</span>
+            <select wicket:id="appenderName" class="form-control"></select>
+            <br>
+            <span>Level</span>
+            <select wicket:id="level" class="form-control"></select>
+            <br>
+            <button wicket:id="submitLink">submit</button>
+        </form>
+    </div>
 </wicket:panel>
 </body>
 </html>
