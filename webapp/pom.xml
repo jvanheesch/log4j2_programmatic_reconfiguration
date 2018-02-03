@@ -67,5 +67,11 @@
             <groupId>com.github.jvanheesch</groupId>
             <artifactId>util</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>de.agilecoders.wicket</groupId>
+            <artifactId>wicket-bootstrap-core</artifactId>
+            <version>0.10.6</version>
+        </dependency>
     </dependencies>
 </project>
