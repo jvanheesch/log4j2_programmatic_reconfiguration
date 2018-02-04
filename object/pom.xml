@@ -17,9 +17,5 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.github.jvanheesch</groupId>
-            <artifactId>util</artifactId>
-        </dependency>
     </dependencies>
 </project>
